@@ -1,0 +1,2 @@
+Este archivo va a contener los logs del sistema:
+

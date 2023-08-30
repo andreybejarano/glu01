@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 1,
+        "marca": "Olmo",
+        "modelo": "Regal",
+        "rodado": 26,
+        "anio": 2019,
+        "color": "Celeste",
+        "peso": 16,
+        "tipo": "Montañera",
+        "precio": 20000,
+        "vendida": true
+    },
+    {
+        "id" : 2,
+        "marca": "Venzo",
+        "modelo": "Loki",
+        "rodado": 29,
+        "anio": 2023,
+        "color": "Azul",
+        "peso": 16,
+        "tipo": "Montañera",
+        "precio": 40000,
+        "vendida": false
+    },
+    {
+        "id" : 3,
+        "marca": "Shimano",
+        "modelo": "Shin",
+        "rodado": 27,
+        "anio": 2018,
+        "color": "Celeste",
+        "peso": 16,
+        "tipo": "Montañera",
+        "precio": 50000,
+        "vendida": true
+    },
+    {
+        "id" : 4,
+        "marca": "SLP",
+        "modelo": "SLP29",
+        "rodado": 29,
+        "anio": 2019,
+        "color": "Rojo",
+        "peso": 16,
+        "tipo": "Montañera",
+        "precio": 100000,
+        "vendida": false
+    }
+]
