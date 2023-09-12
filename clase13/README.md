@@ -43,3 +43,18 @@ git commit -m "El mensaje de commit"
 ``` shell
 git push
 ```
+
+## Traer los cambios del repositio remoto a mi local
+1. En una terminal hacer:
+``` shell
+git pull
+```
+
+## Clonar el proyecto
+>> En el caso que el repositorio sea publico cualquiera puede ver los cambios y puede clonarlo con https pero no puedo subir cambios nuevos.
+Si el repositorio es privado si o si debo tener acceso como colaborador.
+1. En una teminal debo hacer, este comando ya me crea una carpeta nueva con el nombre del repositorio:
+``` shell
+git clone <<REMPLAZAR POR LA URL DEL REPOSITORIO>>
+```
+2. Abrir con `VSCode`
