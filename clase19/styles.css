@@ -1,0 +1,28 @@
+#main-container {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+}
+
+#main-container > .box {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+}
+
+#box1 {
+    background-color: yellow;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+#box3 {
+    background-color: red;
+}
+
+#box4 {
+    background-color: gray;
+}
