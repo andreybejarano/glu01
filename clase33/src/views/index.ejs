@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body style="<%= locals.user && `background-color: ${user.color}` %>">
+    <form action="/" method="post" class="user-form">
+        <label for="txfName">Ingrese su nombre</label>
+        <input type="text" name="name" id="txfName" value="<%= (locals.oldData && oldData.name) && oldData.name %>">
+        <% if (locals.errors && errors.name) { %>
+            <span class="error"><%= errors.name.msg %></span>
+        <% } %>
+        <select name="color" id="cmbColor">
+            <option value="">Selecciona color</option>
+            <option value="red" <%= (locals.oldData && oldData.color === 'red') && 'selected' %>>Rojo</option>
+            <option value="blue" <%= (locals.oldData && oldData.color === 'blue') && 'selected' %>>Azul</option>
+            <option value="yellow" <%= (locals.oldData && oldData.color === 'yellow') && 'selected' %>>Amarilo</option>
+        </select>
+        <% if (locals.errors && errors.color) { %>
+            <span class="error"><%= errors.color.msg %></span>
+        <% } %>
+        <label for="txfEmail">Ingrese su email</label>
+        <input type="email" name="email" id="txfEmail" value="<%= (locals.oldData && oldData.email) && oldData.email %>">
+        <% if (locals.errors && errors.email) { %>
+            <span class="error"><%= errors.email.msg %></span>
+        <% } %>
+        <label for="txfAge">Ingrese su edad</label>
+        <input type="number" name="age" id="txfAge" value="<%= (locals.oldData && oldData.age) && oldData.age %>">
+        <div>
+            <input type="checkbox" name="rememberColor" id="chkRememberColor">
+            <label for="chkRememberColor">Recordar Color</label>
+        </div>
+        <button type="submit">Enviar</button>
+        <% if(locals.user?.color) {%>
+            <a href="/logout"><button type="button">Olvidar el color</button></a>
+        <% } %>
+    </form>
+    <% if (locals.user) { %>
+    <h1>Hola <%= user.name %>, elegiste el color: <%= user.color %>, tu email es: <%= user.email %> y tu edad es: <%= user.age %></h1>
+    <% } %>
+</body>
+</html>
