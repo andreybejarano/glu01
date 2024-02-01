@@ -1,0 +1,6 @@
+@import './styles/bootstrap.css';
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
