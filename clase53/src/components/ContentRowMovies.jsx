@@ -11,7 +11,7 @@ const data = [
         title: 'Total awards',
         quantity: 79,
         color: 'success',
-        icon: 'fa-award '
+        icon: 'fa-award'
     },
     {
         title: 'Actors quantity',

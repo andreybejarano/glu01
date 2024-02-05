@@ -1,6 +1,7 @@
 import ContentRowTop from "./ContentRowTop"
 import Footer from "./Footer"
 import TopBar from "./TopBar"
+import Movie from './Movie'
 
 function ContentWrapper() {
     return (
@@ -16,6 +17,7 @@ function ContentWrapper() {
 				{/* <!-- Content Row Top --> */}
 				<ContentRowTop />
 				{/* <!--End Content Row Top--> */}
+				<Movie />
 			</div>
 			{/* <!-- End of MainContent --> */}
 
