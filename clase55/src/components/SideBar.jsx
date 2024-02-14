@@ -1,22 +1,26 @@
+import { Link } from "react-router-dom"
+
 function SideBar() {
-    return (
-        <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+	console.log('cargo');
+	return (
+		<ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 			{/* <!-- Sidebar - Brand --> */}
-			<a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+			<Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
 				<div className="sidebar-brand-icon">
 					<img className="w-100" src="/images/logo-DH.png" alt="Digital House" />
 				</div>
-			</a>
+			</Link>
 
 			{/* <!-- Divider --> */}
 			<hr className="sidebar-divider my-0" />
 
 			{/* <!-- Nav Item - Dashboard --> */}
 			<li className="nav-item active">
-				<a className="nav-link" href="/">
+				<Link className="nav-link" to="/">
 					<i className="fas fa-fw fa-tachometer-alt"></i>
-					<span>Dashboard - DH movies</span></a>
+					<span>Dashboard - DH movies</span>
+				</Link>
 			</li>
 
 			{/* <!-- Divider --> */}
@@ -27,30 +31,32 @@ function SideBar() {
 
 			{/* <!-- Nav Item - Pages --> */}
 			<li className="nav-item">
-				<a className="nav-link collapsed" href="/">
+				<Link className="nav-link collapsed" to="/last-movie">
 					<i className="fas fa-fw fa-folder"></i>
-					<span>Pages</span>
-				</a>
+					<span>Ultima Pelicula</span>
+				</Link>
 			</li>
 
 			{/* <!-- Nav Item - Charts --> */}
 			<li className="nav-item">
-				<a className="nav-link" href="/">
+				<Link className="nav-link" to="/genres">
 					<i className="fas fa-fw fa-chart-area"></i>
-					<span>Charts</span></a>
+					<span>Generos</span>
+				</Link>
 			</li>
 
 			{/* <!-- Nav Item - Tables --> */}
 			<li className="nav-item">
-				<a className="nav-link" href="/">
+				<Link className="nav-link" to="/movies">
 					<i className="fas fa-fw fa-table"></i>
-					<span>Tables</span></a>
+					<span>Peliculas</span>
+				</Link>
 			</li>
 
 			{/* <!-- Divider --> */}
 			<hr className="sidebar-divider d-none d-md-block" />
 		</ul>
-    )
+	)
 }
 
 export default SideBar
